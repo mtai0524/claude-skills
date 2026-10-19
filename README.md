@@ -35,6 +35,7 @@ Bộ skill và rule dùng lại được cho [Claude Code](https://claude.com/cl
 | `api-design` | `src/api/**`, `src/routes/**`, `app/api/**`, `**/Controllers/**`, `**/Apis/**` |
 | `testing` | `tests/**`, `*.test.*`, `*.spec.*` |
 | `todo-priority` | Everything: `TODO(0)`…`TODO(4)`, `PERF`; no bare `TODO` |
+| `task-commit` | Everything: when a task changed files, end the reply with a ready-to-copy commit message (propose only, no commit/push) |
 
 **`settings.json`** — blocks `git push` for Claude (you push yourself) and turns off the commit/PR attribution lines.
 
@@ -108,6 +109,7 @@ Keep each skill short and specific. Then re-run `install.ps1` on your projects.
 | `api-design` | `src/api/**`, `src/routes/**`, `app/api/**`, `**/Controllers/**`, `**/Apis/**` |
 | `testing` | `tests/**`, `*.test.*`, `*.spec.*` |
 | `todo-priority` | Toàn dự án: `TODO(0)`…`TODO(4)`, `PERF`; không viết `TODO` trống |
+| `task-commit` | Toàn dự án: xong task có sửa file thì cuối câu trả lời đưa sẵn nội dung commit để copy (chỉ đề xuất, không commit/push) |
 
 **`settings.json`**: chặn Claude chạy `git push` (bạn tự push) và tắt dòng attribution trong commit/PR.
 
