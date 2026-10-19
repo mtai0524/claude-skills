@@ -17,6 +17,6 @@ Design and plans go to docs, not code:
   - First lines of the file: the title, then `**Module:** <module name>` (e.g. `**Module:** QC Pro · Module 4 — Đo lường sản phẩm mới`) and links to the module's requirements/mock if there are any.
   - If it is unclear which module the work belongs to, ask before writing the spec.
 - Never put new specs or plans in a shared catch-all folder (such as `docs/superpowers/`). Existing docs stay where they are: do not move or rename them unless asked. This overrides the superpowers default location.
-- A module folder has a `README.md` that lists its files (requirements, mock, specs, plans); add new specs and plans to it. If the solution file lists doc files (e.g. `.slnx` solution items), add them under that module's solution folder (e.g. `docs/<Module>/specs/`), creating it if needed.
+- A module folder has a `README.md` that lists its files (requirements, mock, specs, plans); add new specs and plans to it. If the solution file lists doc files (e.g. `.slnx` solution items), add them under that module's solution folder (e.g. `docs/<Module>/specs/`), creating it if needed. Only add entries: do not regroup, move or reorder existing solution items.
 - Small fixes and one-file changes skip spec and plan.
 - When code changes a documented rule, update the spec in the same change instead of explaining it in a comment.
