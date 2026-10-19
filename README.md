@@ -36,8 +36,9 @@ Bộ skill và rule dùng lại được cho [Claude Code](https://claude.com/cl
 | `testing` | `tests/**`, `*.test.*`, `*.spec.*` |
 | `todo-priority` | Everything: `TODO(0)`…`TODO(4)`, `PERF`; no bare `TODO` |
 | `task-commit` | Everything: when a task changed files, end the reply with a ready-to-copy commit message (propose only, no commit/push) |
+| `comments` | Everything: minimal code comments (one-line "why" only); design and plans go to `docs/superpowers/specs` and `docs/superpowers/plans` |
 
-**`settings.json`** — blocks `git push` for Claude (you push yourself) and turns off the commit/PR attribution lines.
+**`settings.json`** — enables the [superpowers](https://github.com/obra/superpowers) plugin (brainstorm → spec → plan → subagent-driven execution), blocks `git push` for Claude (you push yourself) and turns off the commit/PR attribution lines. Claude Code asks to install the plugin the first time you open the project; accept it. If the project already has a `.claude/settings.json`, the installer keeps it: copy the `extraKnownMarketplaces` and `enabledPlugins` keys in by hand, or run with `-Force`.
 
 ### Install
 
@@ -110,8 +111,9 @@ Keep each skill short and specific. Then re-run `install.ps1` on your projects.
 | `testing` | `tests/**`, `*.test.*`, `*.spec.*` |
 | `todo-priority` | Toàn dự án: `TODO(0)`…`TODO(4)`, `PERF`; không viết `TODO` trống |
 | `task-commit` | Toàn dự án: xong task có sửa file thì cuối câu trả lời đưa sẵn nội dung commit để copy (chỉ đề xuất, không commit/push) |
+| `comments` | Toàn dự án: comment trong code tối thiểu (chỉ một dòng "vì sao"); thiết kế và kế hoạch đưa vào `docs/superpowers/specs` và `docs/superpowers/plans` |
 
-**`settings.json`**: chặn Claude chạy `git push` (bạn tự push) và tắt dòng attribution trong commit/PR.
+**`settings.json`**: bật plugin [superpowers](https://github.com/obra/superpowers) (brainstorm → spec → plan → chia subagent thực thi), chặn Claude chạy `git push` (bạn tự push) và tắt dòng attribution trong commit/PR. Lần đầu mở dự án, Claude Code hỏi cài plugin: chọn đồng ý. Nếu dự án đã có `.claude/settings.json`, script giữ nguyên file đó: tự chép hai khóa `extraKnownMarketplaces` và `enabledPlugins` vào, hoặc chạy với `-Force`.
 
 ### Cài đặt
 
