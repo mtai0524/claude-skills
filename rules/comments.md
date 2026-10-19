@@ -11,7 +11,8 @@ Code comments:
 - When editing a file, do not add comments to code you did not change.
 
 Design and plans go to docs, not code:
-- Non-trivial work (a new feature, a flow that spans several files or layers, a behavior or data-format change) starts with a spec: `docs/superpowers/specs/YYYY-MM-DD-<topic>-design.md` (intent, goals, rules, edge cases, open questions).
-- Then a plan: `docs/superpowers/plans/YYYY-MM-DD-<topic>.md` (tasks with file paths and checkboxes), executed with superpowers subagent-driven-development (one subagent per task, review between tasks).
+- Non-trivial work (a new feature, a flow that spans several files or layers, a behavior or data-format change) starts with a spec `YYYY-MM-DD-<topic>-design.md` (intent, goals, rules, edge cases, open questions), then a plan `YYYY-MM-DD-<topic>.md` (tasks with file paths and checkboxes), executed with superpowers subagent-driven-development (one subagent per task, review between tasks).
+- Where they go: work that belongs to a module goes in that module's doc folder, next to its requirements and mock: `docs/<area>/<module>/specs/` and `docs/<area>/<module>/plans/` (for example `docs/qc-pro/module4-do-luong-san-pham-moi/specs/`). Only work that fits no module goes to `docs/superpowers/specs/` and `docs/superpowers/plans/`. This overrides the superpowers default location.
+- A module folder has a `README.md` that lists its files (requirements, mock, specs, plans); add new specs and plans to it. If the solution file lists doc files (e.g. `.slnx` solution items), add them under the folder that matches their path.
 - Small fixes and one-file changes skip spec and plan.
 - When code changes a documented rule, update the spec in the same change instead of explaining it in a comment.
