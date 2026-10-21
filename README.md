@@ -26,6 +26,7 @@ Bộ skill và rule dùng lại được cho [Claude Code](https://claude.com/cl
 | `docs-readme` | Update README in the same change when setup, config or usage changes |
 | `ponytail` | Lazy senior dev mode: smallest complete change, reuse what exists, name what was skipped |
 | `prompt-patterns` | Copy-paste prompts for planning, quality, verification and bug fixing |
+| `github-issue` | Open a GitHub issue for each problem to solve (search for duplicates first); when it changes, update it as a new version (v2, v3… with date and tag/commit) and comment; without `gh`, write ready-to-paste text |
 
 **Rules** (`rules/*.md`) — always-on guidance; a rule with `paths:` only applies when Claude touches matching files.
 
@@ -101,6 +102,7 @@ Keep each skill short and specific. Then re-run `install.ps1` on your projects.
 | `docs-readme` | Đổi cách cài đặt, cấu hình hay sử dụng thì sửa README trong cùng thay đổi |
 | `ponytail` | Chế độ "dev lười": thay đổi nhỏ nhất mà đủ, dùng lại cái có sẵn, nêu rõ phần đã bỏ qua |
 | `prompt-patterns` | Mẫu câu lệnh copy-paste để lập kế hoạch, nâng chất lượng, kiểm chứng, sửa bug |
+| `github-issue` | Mở issue GitHub cho từng vấn đề cần giải quyết (tìm trùng trước); khi có thay đổi thì cập nhật thành version mới (v2, v3… kèm ngày và tag/commit) và comment; không có `gh` thì đưa sẵn nội dung để dán |
 
 **Rules** (`rules/*.md`): hướng dẫn luôn bật; rule nào có `paths:` thì chỉ áp dụng khi Claude sửa file khớp đường dẫn đó.
 
