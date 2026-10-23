@@ -22,6 +22,7 @@ Bộ skill và rule dùng lại được cho [Claude Code](https://claude.com/cl
 | `changelog` | Update `CHANGELOG.md` from commits since the last tag (Keep a Changelog) |
 | `pr-description` | PR title + Summary / Why / How to test / Risks; shows a draft, does not open the PR |
 | `debug-root-cause` | Reproduce → locate → confirm one cause → fix at the source → prove it → 3-line report |
+| `qc-ui` | TakakoMes only: build pages in the Quality Control / QC Pro style (HeaderSection, GenericMudTable, tabs, chips, dialogs, forms); in other projects asks before applying |
 | `refactor-safe` | Behavior-preserving refactor in small verified steps; no bug fixes mixed in |
 | `review-diff` | Review a diff for correctness, security, data loss, performance, bloat; `file:line — problem — fix` |
 | `docs-readme` | Update README in the same change when setup, config or usage changes |
@@ -99,6 +100,7 @@ Keep each skill short and specific. Then re-run `install.ps1` on your projects.
 | `changelog` | Cập nhật `CHANGELOG.md` từ các commit kể từ tag gần nhất (Keep a Changelog) |
 | `pr-description` | Tiêu đề PR + Summary / Why / How to test / Risks; chỉ đưa bản nháp, không tự mở PR |
 | `debug-root-cause` | Tái hiện → tìm chỗ hỏng → xác nhận đúng một nguyên nhân → sửa tận gốc → chứng minh → báo cáo 3 dòng |
+| `qc-ui` | Chỉ cho TakakoMes: dựng trang theo style Quality Control / QC Pro (HeaderSection, GenericMudTable, tab, chip, dialog, form); dự án khác thì hỏi trước khi áp dụng |
 | `refactor-safe` | Refactor không đổi hành vi, từng bước nhỏ có kiểm tra; không trộn sửa bug vào |
 | `review-diff` | Review diff về đúng/sai, bảo mật, mất dữ liệu, hiệu năng, code thừa; báo dạng `file:dòng — lỗi — cách sửa` |
 | `docs-readme` | Đổi cách cài đặt, cấu hình hay sử dụng thì sửa README trong cùng thay đổi |
