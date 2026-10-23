@@ -18,6 +18,7 @@ Bộ skill và rule dùng lại được cho [Claude Code](https://claude.com/cl
 |---|---|
 | `branch-naming` | `<type>/<short-kebab>` branch names; branch off before editing on `main`/`master`; never push |
 | `commit-message` | Conventional Commits, one logical change per commit, no attribution lines; proposes a ready-to-copy commit message at the end of every task that changed files (does not commit or push by itself) |
+| `commit-push` | Commit the current changes (split by logical change, `commit-message` format) and push the current branch; asks first on `main`/`master`, never force pushes. Runs only when called with `/commit-push` |
 | `changelog` | Update `CHANGELOG.md` from commits since the last tag (Keep a Changelog) |
 | `pr-description` | PR title + Summary / Why / How to test / Risks; shows a draft, does not open the PR |
 | `debug-root-cause` | Reproduce → locate → confirm one cause → fix at the source → prove it → 3-line report |
@@ -94,6 +95,7 @@ Keep each skill short and specific. Then re-run `install.ps1` on your projects.
 |---|---|
 | `branch-naming` | Đặt tên nhánh `<loại>/<mô-tả-ngắn>`; đang ở `main`/`master` thì tạo nhánh trước khi sửa; không push |
 | `commit-message` | Conventional Commits, mỗi commit một thay đổi, không thêm dòng attribution; cuối mỗi task có sửa file thì đề xuất sẵn nội dung commit để copy (không tự commit, không tự push) |
+| `commit-push` | Commit các thay đổi hiện tại (tách theo từng thay đổi, theo `commit-message`) rồi push nhánh hiện tại; đang ở `main`/`master` thì hỏi trước, không force push. Chỉ chạy khi gọi `/commit-push` |
 | `changelog` | Cập nhật `CHANGELOG.md` từ các commit kể từ tag gần nhất (Keep a Changelog) |
 | `pr-description` | Tiêu đề PR + Summary / Why / How to test / Risks; chỉ đưa bản nháp, không tự mở PR |
 | `debug-root-cause` | Tái hiện → tìm chỗ hỏng → xác nhận đúng một nguyên nhân → sửa tận gốc → chứng minh → báo cáo 3 dòng |
